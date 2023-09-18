@@ -273,7 +273,7 @@ function renderCategories(CatArray= [], catégorie){
         {
             content = "menuIcon fa fa-check-circle";
         }
-        $(".CatDrop").append(`<div class="dropdown-item" id="loginCmd" onclick="renderBookmarks("`+ cat +`")">
+        $(".CatDrop").append(`<div class="dropdown-item" id="loginCmd" onclick="renderBookmarks('${cat}')">
         <i class="${content} mx-2"></i>${cat}
     </div>`)
     });
